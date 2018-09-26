@@ -39,6 +39,7 @@ public class ProblemSet2 {
 		String last = in.nextLine();
 		
 		System.out.println("Hello, " + first + " " + last + "!");
+		System.out.println();
 		
 	
 	}
@@ -80,6 +81,7 @@ public class ProblemSet2 {
 		double totalavg = (homeavg * 0.15) + (quizavg * 0.3) + (testavg * 0.55);
 		
 		System.out.println("Your total average is:" + totalavg);
+		System.out.println();
 		
 	}
 	
@@ -89,11 +91,12 @@ public class ProblemSet2 {
 		System.out.println("How many teachers on the trip?");
 		int teachers = in.nextInt();
 		int total = students + teachers;
-		int busses = total / 47 + 1 - 1 * ((total + 46) % 47 + 1) / 47;
+		int busses = (total + 46 )/ 47;
 		
 		
 		System.out.println("You will need " + busses + " busses!");
-		System.out.println("All busses except for the last one will have 47 people, and the last bus has "+ (total % 47 + 47 * ((total + 46) % 47 + 1) / 47)  + " people.");
+		System.out.println("The first " + (busses - 1) + " busses will have 47 people, and the last bus has "+ (((total + 46) % 47)+1)  + " people.");
+		System.out.println();
 		
 	}
 	
@@ -117,6 +120,7 @@ public class ProblemSet2 {
 		System.out.println("GRADE\t\t: " + grade);
 		System.out.println("AGE\t\t: " + age);
 		System.out.println("HOMETOWN\t: " + hometown);
+		System.out.println();
 		
 		
 	}
@@ -133,5 +137,6 @@ public class ProblemSet2 {
 		
 		System.out.println();
 		System.out.println("Your initials are " + first.charAt(0) + middle.charAt(0) + last.charAt(0) + ".");
+		System.out.println();
 	}
 }
