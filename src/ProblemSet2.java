@@ -83,6 +83,9 @@ public class ProblemSet2 {
 		System.out.println("Your total average is:" + totalavg);
 		System.out.println();
 		
+		// eat extra character
+		in.nextLine();
+		
 	}
 	
 	public void groupUs() {
@@ -98,6 +101,8 @@ public class ProblemSet2 {
 		System.out.println("The first " + (busses - 1) + " busses will have 47 people, and the last bus has "+ (((total + 46) % 47)+1)  + " people.");
 		System.out.println();
 		
+		// eat extra character
+		in.nextLine();
 	}
 	
 	public void info() {
