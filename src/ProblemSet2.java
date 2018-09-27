@@ -80,7 +80,11 @@ public class ProblemSet2 {
 		
 		double totalavg = (homeavg * 0.15) + (quizavg * 0.3) + (testavg * 0.55);
 		
-		System.out.println("Your total average is:" + totalavg);
+		int temp = (int) (totalavg * 100);
+		
+		totalavg = (double) temp / 100;
+		
+		System.out.println("Your total average is: " + totalavg);
 		System.out.println();
 		
 		// eat extra character
