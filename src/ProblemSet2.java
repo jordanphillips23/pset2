@@ -102,7 +102,7 @@ public class ProblemSet2 {
 		
 		
 		System.out.println("You will need " + busses + " busses!");
-		System.out.println("The first " + (busses - 1) + " busses will have 47 people, and the last bus has "+ (((total + 46) % 47)+1)  + " people.");
+		System.out.println("The first " + (busses - 1) + " busses will have 48 people, and the last bus has "+ (((total + 46) % 47)+2)  + " people. Both including the bus driver.");
 		System.out.println();
 		
 		// eat extra character
