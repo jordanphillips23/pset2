@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 /**
  * INSTRUCTIONS.
@@ -80,11 +81,9 @@ public class ProblemSet2 {
 		
 		double totalavg = (homeavg * 0.15) + (quizavg * 0.3) + (testavg * 0.55);
 		
-		int temp = (int) (totalavg * 100);
+		DecimalFormat decimal = new DecimalFormat("000.00");
 		
-		totalavg = (double) temp / 100;
-		
-		System.out.println("Your total average is: " + totalavg);
+		System.out.println("Your total average is: " + decimal.format(totalavg));
 		System.out.println();
 		
 		// eat extra character
@@ -102,7 +101,7 @@ public class ProblemSet2 {
 		
 		
 		System.out.println("You will need " + busses + " busses!");
-		System.out.println("The first " + (busses - 1) + " busses will have 48 people, and the last bus has "+ (((total + 46) % 47)+2)  + " people. Both including the bus driver.");
+		System.out.println("The first " + (busses - 1) + " busses will have 47 people, and the last bus has "+ (((total + 46) % 47)+1)  + " people. ");
 		System.out.println();
 		
 		// eat extra character
